@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display page</title>
+</head>
+<body>
+<table border="2">
+    <tr>
+        <td>Eid</td>
+        <td>Efname</td>
+        <td>Elname</td>
+        <td>Edob</td>
+        <td>Email</td>
+        <td>Eaddr</td>
+        <td>Ephone</td>
+    </tr>
+    {% for i in emp %}
+    <tr>
+        <td>{{i.eid}}</td>
+        <td>{{i.efname}}</td>
+        <td>{{i.elname}}</td>
+        <td>{{i.edob}}</td>
+        <td>{{i.email}}</td>
+        <td>{{i.eaddr}}</td>
+        <td>{{i.ephone}}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
